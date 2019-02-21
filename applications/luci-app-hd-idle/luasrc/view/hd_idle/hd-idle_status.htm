@@ -1,5 +1,5 @@
 <script type="text/javascript">//<![CDATA[
-XHR.poll(1, '<%=url([[admin]], [[services]], [[hd_idle]], [[status]])%>', null,
+XHR.poll(5, '<%=url([[admin]], [[services]], [[hd_idle]], [[status]])%>', null,
 	function(x, data) {
 		var tb = document.getElementById('hd-idle_status');
 		if (data && tb) {
